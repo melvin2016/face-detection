@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testing out Face API!!! 🦄</title>
+  <script src="/face.min.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #videoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+  }
+
+  canvas {
+    position: absolute;
+  }
+
+  .emoji {
+    max-width: 1200px;
+    height: 300px;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .red {
+    background-color: #c53030;
+  }
+
+  .blue {
+    background-color: aqua;
+  }
+
+  .dark {
+    background-color: #718096;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+</style>
+
+
+
+<body>
+  <div id="videoContainer">
+    <video id="video" height="560" width="720" autoplay muted></video>
+  </div>
+  <div class="emoji"></div>
+</body>
+
+</html>
